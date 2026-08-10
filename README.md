@@ -35,12 +35,4 @@ No frameworks or build tools required — just open and run.
 
 ---
 
-## 📁 Project Structure
-
-portfolio/
-├── index.html # Main HTML file
-├── style.css # All styles
-├── script.js # JavaScript functionality
-├── profile.jpg # Your profile photo (optional)
-├── resume.pdf # Resume file for download (optional)
-└── README.md # This file
+├── resume.pdf # Resume file for
