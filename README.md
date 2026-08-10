@@ -35,5 +35,4 @@ No frameworks or build tools required — just open and run.
 
 ---
 
-├── resume.pdf      # Resume file for download (optional)
-└── README.md       # This file
+├── resume.pdf      # Resume file for 
