@@ -3,94 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Manjilkar</title>
+    <title>Ayush Manjilkar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
     <header>
-        <nav>
-            <h2 class="logo">Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <a href="#home" class="logo">Ayush<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-
-            <h1>Hello, I'm <span>Ayush MAnjilkar</span></h1>
-            <h3>Web Developer | Student</h3>
-
-            <p>
-                Passionate about creating modern websites and learning
-                new technologies.
+            <div class="profile-wrapper">
+                <img src="profile.jpg" alt="Ayush Manjilkar" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Ayush+Manjilkar&background=7c3aed&color=fff&size=200'">
+            </div>
+            <h1 class="hero-title">Hello, I'm <span class="gradient-text">Ayush Manjilkar</span></h1>
+            <h3 class="hero-subtitle">
+                <span class="typing-text"></span>
+            </h3>
+            <p class="hero-desc">
+                Computer Engineering student passionate about web development, software engineering, and artificial intelligence. I love building practical projects and exploring new technologies.
             </p>
-
-            <a href="#contact" class="btn">Contact Me</a>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Banda, Sawantwadi</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:ayushmanjilkar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
     <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Enginnering student passionate about Web Development,
-            Artificial Intelligence, and Software Engineering. I enjoy solving
-            real-world problems through technology.
-        </p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Engineering student with a strong interest in web development, software engineering, and artificial intelligence. I enjoy turning ideas into real, working applications and continuously learning new technologies.
+                    </p>
+                    <p>
+                        Currently pursuing my degree at Yashwantrao Bhonsle Institute of Technology, I focus on building practical projects that solve real problems. I'm always open to collaboration and new opportunities.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Coding</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 – Present</span>
+                        <h3>Computer Engineering</h3>
+                        <p class="institute">Yashwantrao Bhonsle Institute of Technology</p>
+                        <p>Pursuing Bachelor's degree with focus on software development and emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022</span>
+                        <h3>HSSC (12th)</h3>
+                        <p class="institute">Vidya Higher Secondary School</p>
+                        <p>Score: <strong>78%</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020</span>
+                        <h3>SSC (10th)</h3>
+                        <p class="institute">Ld Samant Highschool</p>
+                        <p>Score: <strong>88%</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <div class="skills-container">
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">JavaScript</div>
-            <div class="card">Python</div>
-            <div class="card">Java</div>
-            <div class="card">MySQL</div>
-            <div class="card">Git</div>
-            <div class="card">GitHub</div>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>Project Name</h3>
-            <p>Short description of your project.</p>
-            <button>View Project</button>
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart Campus Management System</h3>
+                        <p>A web-based system for managing campus-related activities and information efficiently.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Student management</li>
+                            <li><i class="fas fa-check"></i> Attendance tracking</li>
+                            <li><i class="fas fa-check"></i> Events & notifications</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-outline" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card coming-soon">
+                    <div class="project-body">
+                        <i class="fas fa-plus-circle"></i>
+                        <h3>More Projects Coming Soon</h3>
+                        <p>I'm working on new exciting projects. Stay tuned!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <p>Email : your@email.com</p>
-        <p>Phone : +91 123456789</p>
-        <p>GitHub : github.com/yourusername</p>
-        <p>LinkedIn : linkedin.com/in/yourprofile</p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:ayushmanjilkar@gmail.com">ayushmanjilkar@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>[Phone Number]</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Banda, Sawantwadi</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="#" target="_blank">github.com/yourusername</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Your Name | All Rights Reserved</p>
+        <div class="container">
+            <p>© 2026 Ayush Manjilkar. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:ayushmanjilkar@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
